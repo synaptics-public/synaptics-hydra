@@ -1,10 +1,10 @@
 # The Hydra vector arithmetic coprocessor
 
-Hydra is a vector arithmetic accelerator that is designed to work as a coprocessor attached to
+Hydra is a vector arithmetic accelerator that works as a coprocessor attached to
 a small MCU in a small embedded chip.
 
 Hydra was designed at [Synaptics, Inc.](https://www.synaptics.com), where it has appeared in a variety of
-touch controller, touch-screen controller, and fingerprint sensing chips since 2012.
+touch controller, touchscreen controller, and fingerprint sensing chips since 2012.
 In Synaptics chips, Hydra is paired either with a commercial microcontroller core such as
 SiFive's RISC-V E2 or E7, ARM Cortex-M, or Cadence/Tensilica's Xtensa,
 or with Synaptics' own proprietary MCU, Chimera.
@@ -15,7 +15,7 @@ right now inside your phone or laptop. As the market for Synaptics touch chips h
 people are interested in programming Synaptics chips, we have decided to open up these architectures to the
 general public.
 
-Initially, the specifications and related documentation for Chimera and Hydra will appear on this github repository
+Initially, the specifications and related documentation for Chimera and Hydra will appear in this github repository
 and the companion repository for Chimera:
 
 * https://github.com/synaptics-public/synaptics-chimera
@@ -40,17 +40,21 @@ The latest version, Hydra 4.2, has the following general properties:
 * Hydra works as a coprocessor operated by firmware running on a modest 32-bit host CPU such as RISC-V or Chimera.
 * Vector data are located in the host CPU's main RAM; vector size is limited only by the size of the RAM.
 * Hydra uses four DMA channels with interleaved banks of RAM to achieve up to 128 bits/cycle of sustained throughput.
-* Vector operations range from simple vector arithmetic to advanced operations such as matrix multiplications, FIR convolutions, median filters, extended-precision arithmetic, cryptographic encryption and hashing, and neural networks.
+* Vector operations range from simple vector arithmetic to advanced operations such as matrix multiplications, FIR convolutions, sorting and median filters, extended-precision arithmetic, cryptographic encryption and hashing, and neural networks.
 * Addressing modes include linear, strided, matrix, transposed matrix, circular, and special modes to support FFTs and complex number arithmetic.
-* Data types include 8-, 16-, and 32-bit integers and fixed-point numbers, single- and half-precision floating-point, and Posits (an alternate type of floating-point format that packs wide range and good precision into fewer bits). Vector data can be packed with _K_ bits per element for any _K_ &le; 32.
-* Hydra is compact: Hydra 4.2 is 60K-110K gates depending on configuration (somewhat more when synthesized to very high clock speeds).
-* Hydra performs one 32-bit fused multiply-add or up to 4 byte-integer multiply-adds per cycle in its arithmetic operations; it achieves this sustained rate even in advanced operations such as matrix multiplications or 2D convolutions.
-* Hydra can perform vector instructions one-by-one under firmware control, or autonomously under control of a stored program of vector operations.
+* Data types include 8-, 16-, and 32-bit integers and fixed-point numbers, IEEE standard single- and half-precision floating-point, and Posits (an alternative floating-point format that packs wide range and good precision into fewer bits). Vector data can be packed with _K_ bits per element for any _K_ &le; 32.
+* Hydra is compact: Hydra 4.2 is 60K-110K gates depending on its configuration. (Like any processor, it grows somewhat larger when synthesized to very high clock speeds.)
+* Hydra performs one 32-bit fused multiply-add or up to 4 byte-integer multiply-adds per cycle in its arithmetic operations; it achieves this sustained rate even in advanced operations such as matrix multiplications and 2D convolutions.
+* Hydra can perform vector operations one-by-one under firmware control, or autonomously under control of a stored program of vector instructions.
 
 This repository is still in preparation, but it will shortly contain at least these primary Hydra documents:
 
 * The _Hydra 4 User's Guide_, an MS Word document of ~800 pages.
 * The _Hydra 4 Architecture Overview_ presentation, an MS PowerPoint deck of ~200 slides.
+
+Also:
+
+* The slides from Dave Gillespie's presentation at Embedded World 2026, which described how Hydra accelerated a simple neural network in Synaptics touch screen controllers.
 
 Questions, inquiries, and comments are always welcome!
 
