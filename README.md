@@ -4,7 +4,7 @@ Hydra is a vector arithmetic accelerator that is designed to work as a coprocess
 a small MCU in a small embedded chip.
 
 Hydra was designed at [Synaptics, Inc.](https://www.synaptics.com), where it has appeared in a variety of
-touch controller, touch-screen controller, and fingerprint sensing chips since ~2012.
+touch controller, touch-screen controller, and fingerprint sensing chips since 2012.
 In Synaptics chips, Hydra is paired either with a commercial microcontroller core such as
 SiFive's RISC-V E2 or E7, ARM Cortex-M, or Cadence/Tensilica's Xtensa,
 or with Synaptics' own proprietary MCU, Chimera.
