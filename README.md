@@ -6,7 +6,7 @@ a small MCU in a small embedded chip.
 Hydra was designed at [Synaptics, Inc.](https://www.synaptics.com), where it has appeared in a variety of
 touch controller, touchscreen controller, and fingerprint sensing chips since 2012.
 In Synaptics chips, Hydra is paired either with a commercial or open-source microcontroller core such as
-SiFive's RISC-V E2 or E7, ARM Cortex-M, or Cadence/Tensilica's Xtensa,
+RISC-V (e.g., SiFive's E2 or E7), ARM Cortex-M, or Cadence/Tensilica's Xtensa,
 or with Synaptics' own proprietary MCU, Chimera.
 
 ---
@@ -18,7 +18,7 @@ As the market for Synaptics touch chips has broadened, and more and more
 people are interested in programming Synaptics touch chips, we have decided to open up these architectures to the
 general public.
 
-Initially, the specifications and related documentation for Chimera and Hydra will appear in this github repository
+Initially, the specifications and related documentation for Chimera and Hydra will appear in this GitHub repository
 and in Chimera's companion repository:
 
 * https://github.com/synaptics-public/synaptics-chimera
