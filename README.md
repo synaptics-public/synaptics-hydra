@@ -63,6 +63,10 @@ Also:
 
 * Dave Gillespie's presentation at Embedded World 2026, which described how we used Hydra to accelerate a simple neural network in Synaptics touch screen controllers.
 
+And possibly, eventually:
+
+* Hydra's simulator, header files, and sample firmware.
+
 Questions, inquiries, and comments are always welcome!
 
 Thank you,
