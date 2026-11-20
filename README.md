@@ -56,11 +56,11 @@ The latest version, Hydra 4.2, has the following general properties:
 
 At present, this repository contains this primary Hydra document:
 
-* The _[Hydra 4.2 Architecture Overview_ presentation](doc/hydra4-architecture-overview.pptx), an MS PowerPoint deck of ~260 slides: [pdf](doc/hydra4-architecture-overview.pdf) [pptx](doc/hydra4-architecture-overview.pptx). 
+* The _[Hydra 4.2 Architecture Overview](doc/hydra4-architecture-overview.pptx)_ presentation, an MS PowerPoint deck of ~260 slides: [pdf](doc/hydra4-architecture-overview.pdf) [pptx](doc/hydra4-architecture-overview.pptx). 
 
 And:
 
-* Dave Gillespie's presentation at Embedded World 2026, which described how we used Hydra to accelerate a simple neural network in Synaptics touch screen controllers. [pdf](doc/DaveGillespie_EW26_7.6_no_videos.pdf) [pptx small](doc/DaveGillespie_EW26_7.6_no_videos.pptx)  [pptx with videos](doc/DaveGillespie_EW26_7.6.pptx)
+* Dave Gillespie's presentation at Embedded World 2026, which described how we used Hydra to accelerate a simple neural network in Synaptics touch screen controllers: [pdf](doc/DaveGillespie_EW26_7.6_no_videos.pdf) [pptx small](doc/DaveGillespie_EW26_7.6_no_videos.pptx)  [pptx with videos](doc/DaveGillespie_EW26_7.6.pptx)
 
 This repository will shortly also include the following document (still in preparation):
 
@@ -70,8 +70,10 @@ And possibly, eventually:
 
 * Hydra's simulator, header files, and sample firmware.
 
-_A note on file formats:_  We apologize that binary Word and PowerPoint files are not the
-best for publication in Github
+_A note on file formats:_  We apologize that large binary Word and PowerPoint files are not the
+best for publication on GitHub! These materials go back many years and were developed in a very
+different environment. In the long run, we will see if we can adapt them to a more GitHub-friendly
+ocument format.
 
 ---
 
