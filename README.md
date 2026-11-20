@@ -1,10 +1,10 @@
 # The Synaptics Hydra vector coprocessor
 
 Hydra is a vector arithmetic accelerator that works as a coprocessor attached to
-a small MCU in a small embedded chip.
+a small microcontroller in a small embedded chip.
 
 Hydra was designed at [Synaptics, Inc.](https://www.synaptics.com), where it has appeared in a variety of
-touch controller, touchscreen controller, and fingerprint sensing chips since 2012.
+touchpad controller, touchscreen controller, and fingerprint sensing chips since 2012.
 In Synaptics chips, Hydra is paired either with a commercial or open-source microcontroller core such as
 RISC-V (e.g., SiFive's E2 or E7), ARM Cortex-M, or Cadence/Tensilica's Xtensa,
 or with Synaptics' own proprietary MCU, Chimera.
@@ -35,7 +35,7 @@ was a serpent with many identical snakelike heads; the Hydra coprocessor likewis
 
 <img src='doc/synaptics-chimera-image.png' alt='Chimera drawing' width='300'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src='doc/synaptics-hydra-image.png' alt='Hydra drawing' width='300'>
 
-<!-- Artwork is courtesy of ChatGPT Images. -->
+<!-- Artwork was created by ChatGPT Images. -->
 
 ---
 
@@ -54,18 +54,26 @@ The latest version, Hydra 4.2, has the following general properties:
 
 ---
 
-This repository is still in preparation, but it will shortly contain at least these primary Hydra documents:
+At present, this repository contains this primary Hydra document:
+
+* The _[Hydra 4.2 Architecture Overview_ presentation](doc/hydra4-architecture-overview.pptx), an MS PowerPoint deck of ~260 slides: [pdf](doc/hydra4-architecture-overview.pdf) [pptx](doc/hydra4-architecture-overview.pptx). 
+
+And:
+
+* Dave Gillespie's presentation at Embedded World 2026, which described how we used Hydra to accelerate a simple neural network in Synaptics touch screen controllers. [pdf](doc/DaveGillespie_EW26_7.6_no_videos.pdf) [pptx small](doc/DaveGillespie_EW26_7.6_no_videos.pptx)  [pptx with videos](doc/DaveGillespie_EW26_7.6.pptx)
+
+This repository will shortly also include the following document (still in preparation):
 
 * The _Hydra 4.2 User's Guide_, an MS Word (or PDF) document of ~800 pages.
-* The _Hydra 4.2 Architecture Overview_ presentation, an MS PowerPoint (or PDF) deck of ~200 slides.
-
-Also:
-
-* Dave Gillespie's presentation at Embedded World 2026, which described how we used Hydra to accelerate a simple neural network in Synaptics touch screen controllers.
 
 And possibly, eventually:
 
 * Hydra's simulator, header files, and sample firmware.
+
+_A note on file formats:_  We apologize that binary Word and PowerPoint files are not the
+best for publication in Github
+
+---
 
 Questions, inquiries, and comments are always welcome!
 
