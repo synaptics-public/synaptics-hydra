@@ -73,7 +73,7 @@ And possibly, eventually:
 _A note on file formats:_  We apologize that large binary Word and PowerPoint files are not the
 best for publication on GitHub! These materials go back many years and were developed in a very
 different environment. In the long run, we will see if we can adapt them to a more GitHub-friendly
-ocument format.
+document format.
 
 ---
 
